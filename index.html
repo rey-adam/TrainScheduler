@@ -12,6 +12,12 @@
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <!-- Firebase link -->
     <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+    <!-- jQuery CDN -->
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -20,7 +26,7 @@
         <!-- Jumbotron header -->
         <div class="jumbotron">
             <h1 class="text-center">The Paris Train is Here!</h1>
-            <p class="text-center">See Effiel Tower, Shop at Champs Elysees, and visit The Louvre</p>
+            <p class="text-center">See the Effiel Tower, Shop at Champs Elysees, and visit The Louvre</p>
         </div>
         <!-- Current Train Schedule -->
         <div class="row">
@@ -62,19 +68,19 @@
                         <form role="form">
                             <div class="form-group">
                                 <label for="text">Train Name </label>
-                                <input type="text" class="form-control" id="nameInput">
+                                <input type="text" class="form-control" id="trainNameInput">
                             </div>
                             <div class="form-group">
                                 <label for="text">Destination </label>
-                                <input type="text" class="form-control" id="nameInput">
+                                <input type="text" class="form-control" id="destinationInput">
                             </div>
                             <div class="form-group">
                                 <label for="text">First Train Time </label>
-                                <input type="text" class="form-control" id="nameInput">
+                                <input type="text" class="form-control" id="trainTimeInput">
                             </div>
                             <div class="form-group">
                                 <label for="text">Frequency (min) </label>
-                                <input type="text" class="form-control" id="nameInput">
+                                <input type="text" class="form-control" id="frequencyInput">
                             </div>
                             <button type="submit" class="btn btn-default" id="addUser">Submit</button>
                         </form>
