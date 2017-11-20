@@ -16,16 +16,16 @@ firebase.initializeApp(config);
 // var firebase = firebase.database();
 
 // sending information to firebase
-var trainName = "";
-var destination = "";
-var firstTrainTime = "0";
-var frequency = "0";
+// var trainName = "";
+// var destination = "";
+// var firstTrainTime = 0;
+// var frequency = 0;
 
 $("#addUser").on("click",function(){
-    trainName = $("#trainNameInput").val().trim();
-    destination = $("#destinationInput").val().trim();
-    firstTrainTime = $("#trainTimeInput").val().trim();
-    frequency = $("#frequencyInput").val().trim();
+    var trainName = $("#trainNameInput").val().trim();
+    var destination = $("#destinationInput").val().trim();
+    var firstTrainTime = $("#trainTimeInput").val().trim();
+    var frequency = $("#frequencyInput").val().trim();
 
     firebase.database().ref().set({
         trainName: trainName,
@@ -35,3 +35,9 @@ $("#addUser").on("click",function(){
 
     })
 })
+
+// pseudocode missing codes -------
+// make firebase work
+// push data to firebase
+// display firebase data into HTML page 
+// figure out how to include moment.js to app 
