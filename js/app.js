@@ -21,19 +21,23 @@ firebase.initializeApp(config);
 // var firstTrainTime = 0;
 // var frequency = 0;
 
-$("#addUser").on("click",function(){
+$("#addUser").on("click",function(e){
+    e.preventDefault();
     var trainName = $("#trainNameInput").val().trim();
     var destination = $("#destinationInput").val().trim();
     var firstTrainTime = $("#trainTimeInput").val().trim();
     var frequency = $("#frequencyInput").val().trim();
+        
+    var trainObject = {
 
-    firebase.database().ref().set({
         trainName: trainName,
         destination: destination,
         firstTrainTime: firstTrainTime,
-        frequency: frequency,
+        frequency: frequency
 
-    })
+    } 
+    console.log(trainObject.trainName)
+    firebase.database().ref().push(trainObject)
 })
 
 // pseudocode missing codes -------
