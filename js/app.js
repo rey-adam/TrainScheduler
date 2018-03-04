@@ -41,7 +41,5 @@ $("#addUser").on("click",function(e){
 })
 
 // pseudocode missing codes -------
-// make firebase work
-// push data to firebase
 // display firebase data into HTML page 
 // figure out how to include moment.js to app 
